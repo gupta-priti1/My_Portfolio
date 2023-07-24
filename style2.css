@@ -233,7 +233,7 @@ width: 50%;
     transition: background 0.5s, transform 0.5s;
 }
 .project-content:hover{
-    background:url("Images/projectBackground.jpg");
+    background:url("projectBackground.jpg");
     font-size:large;
     border-radius: 15px;
     padding: 20px;
@@ -389,6 +389,9 @@ nav .fa{
         justify-content: center;
         /* margin: 20px; */
     }
+    .project-img{
+        width:50%;
+    }
     .contact-left{
         flex-basis:100%;
         width: 100%;
@@ -416,5 +419,8 @@ nav .fa{
         text-align: center;
         font-size: 20px;
         width: 160%;
+    }
+    .project-img{
+        width:65%;
     }
 }
