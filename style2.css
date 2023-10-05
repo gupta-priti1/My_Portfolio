@@ -6,6 +6,7 @@
 
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-size: 20px;
 }
 body{
     background-color: black;
@@ -139,7 +140,7 @@ width: 50%;
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
-    justify-content: flex-start; 
+    justify-content: center; 
     text-align: center; 
 }
 .items{
@@ -148,11 +149,12 @@ width: 50%;
     padding: 35px;
     font-weight: bold;
     margin: 1%;
-    font-size: 20px;
+    font-size: 25px;
     border: 1px solid yellowgreen;
     border-radius: 10px;
-    background:linear-gradient(to bottom right,#7A7FBA,#11C37C);
-    color: black;
+    /* background:linear-gradient(to bottom right,#7A7FBA,#5e0ae5); */
+    background-image: linear-gradient(to right, #870000, #190a05);
+    color: white;
     cursor: pointer;
     box-shadow:  rgba(96, 236, 53, 0.845) 0px 10px 20px, rgba(95, 236, 53, 0.89) 0px 7px 6px; 
     transition: background 0.5s, transform 0.5s;
@@ -198,8 +200,14 @@ width: 50%;
     background: url("https://www.encodedna.com/images/theme/bootstrap.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 8px;
+    background-position: 15px;
     background-color:plum
+}
+.react:hover{
+    background: url("https://thienanblog.com/wp-content/uploads/2017/10/react-logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 2px;
 }
 /* ------------------Projects Section----------------- */
 #project{
@@ -215,7 +223,7 @@ width: 50%;
 .project-img{
     border-radius: 10px;
     width: 10%;
-    flex-basis: 35%;
+    flex-basis: 30%;
 
     transition: transform .5s ease-in-out;
  }
@@ -233,7 +241,8 @@ width: 50%;
     transition: background 0.5s, transform 0.5s;
 }
 .project-content:hover{
-    background:url("projectBackground.jpg");
+    /* background:url("projectBackground.jpg"); */
+    background-color: rgb(72, 70, 70);
     font-size:large;
     border-radius: 15px;
     padding: 20px;
@@ -376,9 +385,10 @@ nav .fa{
         justify-content: center;
     }
     .items{
-        width: 200px;
+        width: 50%;
         margin: 3%;
         margin-left: 5%;
+        font-size: 40px;
         
     }
     .bs:hover{
@@ -390,7 +400,7 @@ nav .fa{
         /* margin: 20px; */
     }
     .project-img{
-        width:50%;
+        width: 60%;
     }
     .contact-left{
         flex-basis:100%;
@@ -421,6 +431,6 @@ nav .fa{
         width: 160%;
     }
     .project-img{
-        width:65%;
+        width: 80%;
     }
 }
